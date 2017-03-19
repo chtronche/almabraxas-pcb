@@ -1,0 +1,12 @@
+digraph {
+	node [shape=box];
+	
+	UART0 [shape=none,label="UART"];
+	gps -> UART0 [style=bold,arrowhead=none];
+	UART0 -> teensy;
+
+	UART1 [shape=none,label="UART"];
+	modem -> UART1;
+	UART1 -> teensy;
+	
+}
